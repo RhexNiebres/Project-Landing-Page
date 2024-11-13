@@ -1,0 +1,25 @@
+*{
+   background-color: #1f2937;
+}
+
+.header-container
+{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.Logo
+{
+    flex-basis: 50%;
+}
+
+.header-items
+{
+    flex-grow: 1;
+    display: flex;
+    gap: 20px;
+    font-family:'Roboto', sans-serif;
+    color: white;
+}
+
