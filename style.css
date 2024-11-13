@@ -1,25 +1,50 @@
 *{
    background-color: #1f2937;
+   margin: 10px;
 }
 
 .header-container
 {
     display: flex;
-    justify-content: flex-end;
+    justify-content:space-evenly;
+    
 
 }
 
 .Logo
 {
-    flex-basis: 50%;
+    flex-basis: 300px;
+    font-size: 24px;
+    color: #F9FAF8;
+    border: 2px solid white;
+
 }
 
 .header-items
 {
+    border: 2px solid white;
     flex-grow: 1;
+    font-family:'Roboto', sans-serif;
+    color: white;
+    font-size: 18px;
+}
+
+.main-container
+{
     display: flex;
+    justify-content:space-between;
+}
+.main-items
+{
+    border: 2px solid white;
+    flex: 1;
     gap: 20px;
     font-family:'Roboto', sans-serif;
     color: white;
+}
+.placeholder
+{
+    background-color: grey;
+    text-align:center;
 }
 
