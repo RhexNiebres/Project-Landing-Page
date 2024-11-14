@@ -1,50 +1,117 @@
-*{
-   background-color: #1f2937;
-   margin: 10px;
+body {
+  font-family: Roboto;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 
-.header-container
-{
-    display: flex;
-    justify-content:space-evenly;
-    
-
+.header-container {
+  background: #1f2937;
+  display: flex;
 }
 
-.Logo
-{
-    flex-basis: 300px;
-    font-size: 24px;
-    color: #F9FAF8;
-    border: 2px solid white;
-
+.Logo {
+  font-size: 24px;
+  color: #f9faf8;
+  padding: 11px;
 }
 
-.header-items
-{
-    border: 2px solid white;
-    flex-grow: 1;
-    font-family:'Roboto', sans-serif;
-    color: white;
-    font-size: 18px;
+.header-container ul {
+  flex-grow: 1;
+  justify-content: flex-end;
+  color: white;
+  font-size: 18px;
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
-.main-container
-{
-    display: flex;
-    justify-content:space-between;
+.header-container a {
+  color: white;
+  text-decoration: none;
 }
-.main-items
-{
-    border: 2px solid white;
-    flex: 1;
-    gap: 20px;
-    font-family:'Roboto', sans-serif;
-    color: white;
-}
-.placeholder
-{
-    background-color: grey;
-    text-align:center;
+.header a:visited {
+  color: white;
 }
 
+.main-container {
+  display: flex;
+  justify-content: space-evenly;
+  background: #1f2937;
+}
+.hero-left {
+  flex: 1;
+  gap: 20px;
+  color: white;
+  font-size: 48px;
+  font-weight: 900;
+}
+.hero-main {
+  font-size: 48px;
+}
+.hero-subtext {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+.hero-right {
+  background-color: grey;
+  text-align: center;
+  flex: 1;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 450px;
+  margin-bottom: 50px;
+}
+.information-header {
+  font-size: 36px;
+  color: #1f2937;
+  font-weight: 900;
+  text-align: center;
+  padding: 0 0 50px 0;
+}
+
+.information-content {
+  display: flex;
+  gap: 9px;
+}
+
+.box-image {
+  height: 150px;
+  width: 150px;
+  border-style: solid;
+  border-radius: 16px;
+  border-color: #3b82f6;
+  border-width: 4px;
+  margin-bottom: 8px;
+  justify-content: space-evenly;
+}
+.box-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.box-text {
+  color: #616a76;
+}
+.quote-container {
+  background-color: #e5e7eb;
+  padding: 100px 450px;
+}
+.quote-container .quote {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 100;
+  text-align: left;
+}
+.quote-container .author {
+  text-align: right;
+  font-weight: bold;
+  font-size: 28px;
+}
