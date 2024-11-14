@@ -40,17 +40,29 @@ body {
   justify-content: space-evenly;
   padding: 0px 450px 100px 450px;
   background: #1f2937;
+  flex-direction: row;
+}
+
+@media (max-width: 800px) {
+  .main-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 250px 100px 250px;
+    background: #1f2937;
+    flex-direction: column;
+  }
 }
 .hero-left {
-  flex: 1;
   gap: 20px;
   color: white;
   font-size: 48px;
   font-weight: 900;
 }
+
 .hero-text {
   font-size: 48px;
 }
+
 .hero-subtext {
   font-size: 18px;
   color: #e5e7eb;
